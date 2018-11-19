@@ -2,7 +2,7 @@ function [X, Y, Z] = rotM2eAngles(R)
 % Receives a rotation matrix and returns the euler angles that were used to
 % create it.
 
-if (sind(R(3,1)) == 1)
+if (sin(R(3,1)) == 1)
     
     X = 0;
     Y = asind(1);
